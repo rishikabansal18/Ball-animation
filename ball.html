@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .q{
+        background-color: aqua;
+        height:500px;
+        width:1200px;
+        position: relative;
+    }
+    .a{
+        background-color: bisque;
+        height:50px;
+        width:50px;
+        border-radius:70px;
+        bottom:0px;
+        left:0px;
+        position: absolute;
+        animation: x 3s linear infinite ,
+                   y 1s ease-out infinite alternate;
+    }
+    @keyframes x {
+        from{
+            left:0;
+        }
+        to{
+            left:100%;
+        }
+    }
+    @keyframes y {
+        from{
+            bottom: 0;
+        }
+        to{
+            bottom:100%;
+        }
+    }
+</style>
+<body>
+    <div class="q">
+        <div class="a">
+
+        </div>
+
+    </div>
+</body>
+</html>
